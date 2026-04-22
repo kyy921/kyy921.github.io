@@ -1,0 +1,361 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="19.999999999999545" scrolly="-222.29999999999995" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="Q@zQV@.uID1?~{4)!14Z" x="295" y="247">
+      <field name="LOAD_COMP_ASSETS">FALSE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">FALSE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">FALSE</field>
+    </block>
+  </tab>
+  <tab name="New Tab" type="CommonTab" active="true" scrollx="-336.01559295654306" scrolly="24.500000000000114" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="adamabr00 Adam-s-Verge3D-tools main Adams Verge3D Tools/masterBlock" id="*4jo:x5(E1r*D+KK|LeM" x="150" y="70">
+      <statement name="DO">
+        <block type="adamabr00 Adam-s-Verge3D-tools main Adams Verge3D Tools/shortCutsBlock" id="dHJ$B/5s}XZ$7cghg`#a">
+          <next>
+            <block type="adamabr00 Adam-s-Verge3D-tools main Adams Verge3D Tools/improvedSearch" id="C}ma[Sf?$B;bBz`5x!oD">
+              <next>
+                <block type="adamabr00 Adam-s-Verge3D-tools main Adams Verge3D Tools/minimap" id="-bCNZuJ(Rrpl0fYiJQi:">
+                  <next>
+                    <block type="adamabr00 Adam-s-Verge3D-tools main Adams Verge3D Tools/disableBlocklyBumpGrid" id="Fs|d0)i:/RdbatR|O_%l">
+                      <next>
+                        <block type="adamabr00 Adam-s-Verge3D-tools main Adams Verge3D Tools/addMenuBlock" id="*0a_FJ@Z-]E#-~*0=5aF">
+                          <next>
+                            <block type="adamabr00 Adam-s-Verge3D-tools main Adams Verge3D Tools/grabBlock" id="dPy%qdA-qhQ}i1JKC4no">
+                              <next>
+                                <block type="adamabr00 Adam-s-Verge3D-tools main Adams Verge3D Tools/mathExpression" id="2x7Qe..HTD:5CW{/_$fp">
+                                  <next>
+                                    <block type="adamabr00 Adam-s-Verge3D-tools main Adams Verge3D Tools/localView" id="}o;Ju$VRTOwZVR)jP~od">
+                                      <next>
+                                        <block type="adamabr00 Adam-s-Verge3D-tools main Adams Verge3D Tools/multiSelect" id="ain$Qo@{{OpKBLC_VGbL">
+                                          <next>
+                                            <block type="adamabr00 Adam-s-Verge3D-tools main Adams Verge3D Tools/chainStroke" id="M_3=CzBPKY*h9,P1A$R.">
+                                              <next>
+                                                <block type="adamabr00 Adam-s-Verge3D-tools main Adams Verge3D Tools/scaleSelection" id="64qG~HBEc?%8]:U.pDVC">
+                                                  <next>
+                                                    <block type="adamabr00 Adam-s-Verge3D-tools main Adams Verge3D Tools/rotateSelection" id="2+`2+vOtS=on^6iL%c#w">
+                                                      <next>
+                                                        <block type="adamabr00 Adam-s-Verge3D-tools main Adams Verge3D Tools/procedureRetargetLoader" id="Ro7MxV0?tn(.$?Xbym#8">
+                                                          <next>
+                                                            <block type="adamabr00 Adam-s-Verge3D-tools main Adams Verge3D Tools/moveToTabV2" id="Ne8izhxZ3?T~6OS0jlu*">
+                                                              <next>
+                                                                <block type="adamabr00 Adam-s-Verge3D-tools main Adams Verge3D Tools/floatingToolbar" id="P2]7!d+w@}JwuJRZm~^v"></block>
+                                                              </next>
+                                                            </block>
+                                                          </next>
+                                                        </block>
+                                                      </next>
+                                                    </block>
+                                                  </next>
+                                                </block>
+                                              </next>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="checkVRMode" id="R^Fhm+`{/OqGTMy5#n[O" x="800" y="230">
+      <statement name="DO_AVAIL">
+        <block type="enterVRMode" id="$to5A5|yi}n.!#.m6r~]">
+          <field name="REF_SPACE">SITTING</field>
+          <statement name="DO_ENTER">
+            <block type="setObjTransform" id="^(,=a#yyFM$^A[dwGuG+">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" usevectorslot="true" useworldspace="true"></mutation>
+              <field name="MODE">position</field>
+              <field name="OFFSET">FALSE</field>
+              <value name="TARGETOBJ">
+                <shadow type="objectList" id="GtIh;:`o;/RG2HV.U2y!">
+                  <field name="FIELDNAME">Camera</field>
+                </shadow>
+              </value>
+              <value name="USE_VECTOR">
+                <block type="getObjTransform" id="_U_+ijvL+9kv5005+s!H">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" useworldspace="true"></mutation>
+                  <field name="MODE">position</field>
+                  <field name="COORD">xyz</field>
+                  <value name="TARGETOBJ">
+                    <shadow type="objectList" id="?S?6x{kl?q9S1.O$=`6Z">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="objectList" id="Js3bZnmQWSt%8$:b-Ga`">
+                      <field name="FIELDNAME">Empty</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="makeParent" id="SeIM+HW5h{k,QR!i`HNi">
+                  <value name="PARENT_WHAT">
+                    <shadow type="objectList" id="}PI4xS6:Hya-f2l*wb[|">
+                      <field name="FIELDNAME">Camera</field>
+                    </shadow>
+                  </value>
+                  <value name="PARENT_TO">
+                    <shadow type="objectList" id="YODcUvV][n~)k-WYt)Pf">
+                      <field name="FIELDNAME">Empty</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="Vv4D_P_3DGS/Vv3DGSinit-V1.10" id="]dRjoE?T)40~*;?P-PI(">
+                      <field name="ENABLE">TRUE</field>
+                      <next>
+                        <block type="Vv4D_P_3DGS/Vv3DGSviewer" id="h1B(+JDsjHj.7[]Sq[_$">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="true"></mutation>
+                          <field name="ENABLE">TRUE</field>
+                          <value name="SRC">
+                            <shadow type="text" id="@Q-~LI6|x~1R`tz%k{78">
+                              <field name="TEXT">./saz.sog</field>
+                            </shadow>
+                          </value>
+                          <value name="RAY">
+                            <shadow type="logic_boolean" id="?MLs=9~BhB)DwHBDdN(s">
+                              <field name="BOOL">FALSE</field>
+                            </shadow>
+                          </value>
+                          <statement name="DO">
+                            <block type="hide" id="A:vKX$f?yRpRmS;]*e!f">
+                              <value name="VALUE">
+                                <shadow type="objectList" id="/vuKBN]d:B~ceYe3N!`b">
+                                  <field name="FIELDNAME">Cube</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+      <statement name="DO_UNAVAIL">
+        <block type="Vv4D_P_3DGS/Vv3DGSinit-V1.10" id=":aXx*tiSj?sf/f%=_f,`">
+          <field name="ENABLE">TRUE</field>
+          <next>
+            <block type="Vv4D_P_3DGS/Vv3DGSviewer" id="%aD33LRTr]$@O(zk?b66">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="true"></mutation>
+              <field name="ENABLE">TRUE</field>
+              <value name="SRC">
+                <shadow type="text" id=":1_5-oX94;)L-lUkf;Zg">
+                  <field name="TEXT">./saz.sog</field>
+                </shadow>
+              </value>
+              <value name="RAY">
+                <shadow type="logic_boolean" id="-ythY{GFy`sK!y[@b1Gs">
+                  <field name="BOOL">FALSE</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="hide" id="B-c`s-r9:V4Eg91+#!SY">
+                  <value name="VALUE">
+                    <shadow type="objectList" id="9d.Hz0JoZZh4*/$0X0QX">
+                      <field name="FIELDNAME">Cube</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="addAnnotation" id="@@j[$lt_xTRa/E;~u*JS">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+                      <value name="ANNOTATION">
+                        <shadow type="text" id="84I@]fG0vS7Hvmu=SUS~">
+                          <field name="TEXT">1</field>
+                        </shadow>
+                      </value>
+                      <value name="TARGET">
+                        <shadow type="objectList" id="Vicl*;0P(mnd}![xS2=O">
+                          <field name="FIELDNAME">Cube</field>
+                        </shadow>
+                      </value>
+                      <value name="CONTENTS">
+                        <shadow type="text" id="]G+kM)Q!9J8i.7Us[e:_">
+                          <field name="TEXT">东汉</field>
+                        </shadow>
+                      </value>
+                      <value name="ID">
+                        <shadow type="text" id="]MDQnnv^mvspf5`3Ro3^">
+                          <field name="TEXT">poi1</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="addAnnotation" id="0Kjmxbq5H4f5`#Wp/k2}">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+                          <value name="ANNOTATION">
+                            <shadow type="text" id="LTe#(}Mz+N+xl_|uLh,+">
+                              <field name="TEXT">2</field>
+                            </shadow>
+                          </value>
+                          <value name="TARGET">
+                            <shadow type="objectList" id="GSw5JS`QlU4q%Cf$C{nt">
+                              <field name="FIELDNAME">Cube.001</field>
+                            </shadow>
+                          </value>
+                          <value name="CONTENTS">
+                            <shadow type="text" id=":2g:{};sW;xsq^{9)9IC">
+                              <field name="TEXT">Point of interest #1</field>
+                            </shadow>
+                          </value>
+                          <value name="ID">
+                            <shadow type="text" id="EjIQxIWI4rEubZ;9tJpq">
+                              <field name="TEXT">poi1</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="addAnnotation" id="ILaC45od_Mu/T$_PTuRo">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" usenameslot="false"></mutation>
+                              <value name="ANNOTATION">
+                                <shadow type="text" id=",p]%u|J#_?!DD.,J%1zA">
+                                  <field name="TEXT">3</field>
+                                </shadow>
+                              </value>
+                              <value name="TARGET">
+                                <shadow type="objectList" id="PPb-wXJr/!}oZsJHbJQY">
+                                  <field name="FIELDNAME">Cube.002</field>
+                                </shadow>
+                              </value>
+                              <value name="CONTENTS">
+                                <shadow type="text" id="yH(Z[cY-Yhj0B)}H[}Oh">
+                                  <field name="TEXT">Point of interest #1</field>
+                                </shadow>
+                              </value>
+                              <value name="ID">
+                                <shadow type="text" id="9%TIw3r]`E.JYCtB9-24">
+                                  <field name="TEXT">poi1</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="createEnvironment" id="z(9,1!fNfT[=sK)LJnxn">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" oncereadydoslot="true"></mutation>
+                                  <field name="TYPE">BACKGROUND_COLOR</field>
+                                  <value name="NAME">
+                                    <shadow type="text" id="Y;4Xml[VOXcC{f]P55[C">
+                                      <field name="TEXT">myEnvMaterial</field>
+                                    </shadow>
+                                  </value>
+                                  <statement name="ONCE_READY_DO">
+                                    <block type="setMaterialColor" id="3(wyZu$wa2UnFaDUz{%k">
+                                      <mutation xmlns="http://www.w3.org/1999/xhtml" flexcolinput="false" usecsscolor="false"></mutation>
+                                      <field name="MAT_COL_NAME">Background Color</field>
+                                      <value name="MATERIAL">
+                                        <shadow type="materialList" id="~2/+-@;NO[R9gJS~/7X9">
+                                          <field name="FIELDNAME">myEnvMaterial</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="R">
+                                        <shadow type="math_number" id="kPQvuudy4[HyEPwH{c/Z">
+                                          <field name="NUM">0</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="G">
+                                        <shadow type="math_number" id="F4_P8N1vfiH,4~xrAe:*">
+                                          <field name="NUM">0</field>
+                                        </shadow>
+                                      </value>
+                                      <value name="B">
+                                        <shadow type="math_number" id="er;vL.Y0$x$|wV|ig]u0">
+                                          <field name="NUM">0</field>
+                                        </shadow>
+                                      </value>
+                                    </block>
+                                  </statement>
+                                  <next>
+                                    <block type="setTimeout" id="Qy!g6OkNTH4I1IZ188Hk" disabled="true">
+                                      <value name="VALUE">
+                                        <shadow type="math_number" id="7+w|o1.17py`*4NBXp+$">
+                                          <field name="NUM">5</field>
+                                        </shadow>
+                                      </value>
+                                      <statement name="DO">
+                                        <block type="hide" id="+$TTc1ZaU~JV{~+Tnx$~">
+                                          <value name="VALUE">
+                                            <shadow type="objectList" id="4sts6jDBoLxxN)It@kTo">
+                                              <field name="FIELDNAME">saz.sog</field>
+                                            </shadow>
+                                          </value>
+                                          <next>
+                                            <block type="setTimeout" id="KCaGav-*K!a*+kG#+R-Z">
+                                              <value name="VALUE">
+                                                <shadow type="math_number" id="F:9+yZHkE7cdt4iaJ05I">
+                                                  <field name="NUM">5</field>
+                                                </shadow>
+                                              </value>
+                                              <statement name="DO">
+                                                <block type="show" id="sNw.%tXlo{^_Ic[b)apr">
+                                                  <value name="VALUE">
+                                                    <shadow type="objectList" id="TYg+s/*ZI[/_tBI{#3M*">
+                                                      <field name="FIELDNAME">&lt;none&gt;</field>
+                                                    </shadow>
+                                                    <block type="text" id="Sv)KHria#s6}3EyT*]d%">
+                                                      <field name="TEXT">saz.sog</field>
+                                                    </block>
+                                                  </value>
+                                                </block>
+                                              </statement>
+                                            </block>
+                                          </next>
+                                        </block>
+                                      </statement>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+              <next>
+                <block type="Vv4D_P_3DGS/Vv3DGSReveal" id="ctw:IELiZN/d=@|,t3-{">
+                  <field name="ENABLE">TRUE</field>
+                  <field name="OPTION">SETDOTSCALE</field>
+                  <value name="SPLAT">
+                    <shadow type="objectList" id="d{!R+$)^VH4N_X|Riy*O">
+                      <field name="FIELDNAME">saz.sog</field>
+                    </shadow>
+                    <block type="text" id="^JBE:l?d-xcq5JqFT^nR">
+                      <field name="TEXT">saz.sog</field>
+                    </block>
+                  </value>
+                  <value name="VALUE">
+                    <shadow type="number_slider" id="a%O*^ws[2tW*=`5U5%U{">
+                      <field name="NUM" min="0" max="3000" step="0.1">651.5</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setMaterialWireframe" id="qk4/#Vu5kPm)Q/cJAJEi" x="1325" y="929">
+      <field name="DO_WHAT">ENABLE</field>
+      <value name="MATERIAL">
+        <shadow type="materialList" id="K|Jz0BYaBi?`p.(:;eFL">
+          <field name="FIELDNAME">Material.003</field>
+        </shadow>
+      </value>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1211.4" viewport-y="37" viewport-w="1134.58" viewport-h="803.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
