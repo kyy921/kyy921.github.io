@@ -1,0 +1,135 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="897" scrolly="279" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="})Y(9nf#@/[VC8eqU%tF" x="-430" y="-310">
+      <field name="LOAD_COMP_ASSETS">TRUE</field>
+      <field name="FULLSCREEN">FALSE</field>
+      <field name="BKG_TRANSPARENCY">FALSE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+  </tab>
+  <tab name="main" type="CommonTab" active="true" scrollx="749.6696741532514" scrolly="202.56534507405195" scale="0.7318125977972154">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="-Q=_vsI_o`2-=s,ev2rL">'geometrySpeed'</variable>
+      <variable id="@7}AG)(dN3TmR]3)aG-9">geometrySpeed</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setActiveCamera" id=";6qo;@Y,{,e4HAsQ~lLC" x="-1510" y="-990">
+      <value name="CAMERA">
+        <shadow type="objectList" id="io(2Rle%m3Z{-8A?{ffJ">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="initFullscreen" id="J7ezo|+4s*6b;HJ37t*~" x="-1190" y="-530">
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="9l`L97p_CtbOTKVk00=Z">
+          <field name="TEXT">myElem</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="replaceTexture" id="[9gfb]PP2H,wbj-H?(@," x="-730" y="-270">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false" notexsharing="false"></mutation>
+      <field name="OLD_TEX_NAME">uv_grid.jpg</field>
+      <value name="MATERIAL">
+        <block type="materialList" id=".CD%jcZMlAO3lD0m7d6h">
+          <field name="FIELDNAME">canvas</field>
+        </block>
+      </value>
+      <value name="NEW_TEX_URL">
+        <shadow type="text" id="/dx=,1f!gsf0iyR[o0yh">
+          <field name="TEXT">./newTexture.png</field>
+        </shadow>
+        <block type="createCanvasElem" id="![v8eKm=YMv#G|^;;~$;">
+          <value name="ID">
+            <shadow type="text" id=",K]cQk-S.o|Azv(U^BPx">
+              <field name="TEXT">geometry_canvas</field>
+            </shadow>
+          </value>
+          <value name="WIDTH">
+            <shadow type="math_number" id="1O:+l*Y?f(01J%kWFD=h">
+              <field name="NUM">512</field>
+            </shadow>
+          </value>
+          <value name="HEIGHT">
+            <shadow type="math_number" id="kKKYPAr@^A{r0~p)J_r=">
+              <field name="NUM">512</field>
+            </shadow>
+          </value>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setInterval" id="xbgLD!+KC0a%75ibLMSL" x="-1270" y="-230">
+      <value name="VALUE">
+        <shadow type="math_number" id="MiRva(FE94-o-MNfKHJ.">
+          <field name="NUM">0.1</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setInterval" id="mqGmhdMAa-#?OEQII*O{" x="-1010" y="-170">
+      <value name="VALUE">
+        <shadow type="math_number" id="$F)*fr|/2ifje}2X|QAQ">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_get" id="o_w=R5S5/CcqwD%m3X/3" x="-730" y="30">
+      <field name="VAR" id="-Q=_vsI_o`2-=s,ev2rL">'geometrySpeed'</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="elapsedTotal" id="!/z0-k(e-OXB]Gw8K,c6" x="-470" y="50"></block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="math_trig" id="Q*45xI_Sim2^arAfBVuA" x="-630" y="70">
+      <field name="OP">SIN</field>
+      <value name="NUM">
+        <shadow type="math_number" id="+NyB0C/AI=k6X^O6pwnD">
+          <field name="NUM">45</field>
+        </shadow>
+        <block type="elapsedTotal" id="A4,|~y=v-7cp4WTi}buJ"></block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="math_number" id="OZcxkSnMs8vLEu5]q~u7" x="-310" y="70">
+      <field name="NUM">0.1</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setTimeout" id="kh!ClU$EO%f1ci%4Fy!(" x="-1010" y="110">
+      <value name="VALUE">
+        <shadow type="math_number" id="n:b}andIGXn+Ly^,2g)k">
+          <field name="NUM">1</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="variables_set" id="Y4=Z1Z0G]XkQ(K9[fuV%">
+          <field name="VAR" id="-Q=_vsI_o`2-=s,ev2rL">'geometrySpeed'</field>
+          <value name="VALUE">
+            <block type="math_number" id="e(o7,MZnC0E+eo+OA1zP">
+              <field name="NUM">1</field>
+            </block>
+          </value>
+          <next>
+            <block type="variables_set" id="|g~[(rq@_BgF0$tU2Jc[">
+              <field name="VAR" id="@7}AG)(dN3TmR]3)aG-9">geometrySpeed</field>
+              <value name="VALUE">
+                <block type="math_number" id="EsKAFm8Dm@a)w.SEJG9-">
+                  <field name="NUM">0.2</field>
+                </block>
+              </value>
+              <next>
+                <block type="everyFrame" id="S5U9i=w_nga(^1N9gCP6">
+                  <statement name="DO">
+                    <block type="execScript" id="`H#eJjnIUQ}}bzMi:Mw+">
+                      <value name="TEXT">
+                        <shadow type="textMultiline" id="y.YPJ:Wy,5!UK1D$.;^+">
+                          <field name="HIGHLIGHT_MODE">javascript</field>
+                          <field name="TEXT" editor-height="60" editor-width="838.8517241009009">function runCode(app, puzzles) {&amp;#10;    const obj = app.scene.getObjectByName('plane'); // 替换为你的对象名&amp;#10;    &amp;#10;    // Fragment shader (你的原代码，添加uniform声明)&amp;#10;    const fragmentShader = `&amp;#10;#ifdef GL_ES&amp;#10;precision mediump float;&amp;#10;#endif&amp;#10;&amp;#10;#define PI 3.1415926535897932384626433832795&amp;#10;&amp;#10;uniform float iTime;&amp;#10;uniform vec3 iResolution;&amp;#10;&amp;#10;varying vec2 vUv;&amp;#10;&amp;#10;const float wave_amplitude = 0.076;&amp;#10;const float period = 2.*PI;&amp;#10;&amp;#10;float wave_phase() {&amp;#10;    return iTime;&amp;#10;}&amp;#10;&amp;#10;float square(vec2 st) {&amp;#10;    vec2 bl = step(vec2(0.), st);&amp;#10;    vec2 tr = step(vec2(0.),1.0-st);&amp;#10;    return bl.x * bl.y * tr.x * tr.y;&amp;#10;}&amp;#10;&amp;#10;vec4 frame(vec2 st) {&amp;#10;    float tushka = square(st*mat2((1./.48), 0., 0., (1./.69)));&amp;#10;    &amp;#10;    mat2 sector_mat = mat2(1./.16, 0., 0., 1./.22);&amp;#10;    float sectors[4];&amp;#10;    sectors[0] = square(st * sector_mat + (1./.16)*vec2(0.000,-0.280));&amp;#10;    sectors[1] = square(st * sector_mat + (1./.16)*vec2(0.000,-0.060));&amp;#10;    sectors[2] = square(st * sector_mat + (1./.16)*vec2(-0.240,-0.280));&amp;#10;    sectors[3] = square(st * sector_mat + (1./.16)*vec2(-0.240,-0.060));&amp;#10;    vec3 sector_colors[4];&amp;#10;    sector_colors[0] = vec3(0.941, 0.439, 0.404) * sectors[0];&amp;#10;    sector_colors[1] = vec3(0.435, 0.682, 0.843) * sectors[1];&amp;#10;    sector_colors[2] = vec3(0.659, 0.808, 0.506) * sectors[2];&amp;#10;    sector_colors[3] = vec3(0.996, 0.859, 0.114) * sectors[3];&amp;#10;    &amp;#10;    return vec4(vec3(sector_colors[0] + sector_colors[1] +&amp;#10;                     sector_colors[2] + sector_colors[3]), tushka);&amp;#10;}&amp;#10;&amp;#10;vec4 trail_piece(vec2 st, vec2 index, float scale) {&amp;#10;    scale = index.x * 0.082 + 0.452;&amp;#10;    &amp;#10;    vec3 color;&amp;#10;    if (index.y &gt; 0.9 &amp;&amp; index.y &lt; 2.1 ) {&amp;#10;        color = vec3(0.435, 0.682, 0.843);&amp;#10;        scale *= .8;&amp;#10;    } else if (index.y &gt; 3.9 &amp;&amp; index.y &lt; 5.1) {&amp;#10;        color = vec3(0.941, 0.439, 0.404);&amp;#10;        scale *= .8;&amp;#10;    } else {&amp;#10;        color = vec3(0., 0., 0.);&amp;#10;    }&amp;#10;    &amp;#10;    float scale1 = 1./scale;&amp;#10;    float shift = - (1.-scale) / (2. * scale);&amp;#10;    vec2 st2 = vec2(vec3(st, 1.) * mat3(scale1, 0., shift, 0., scale1, shift, 0., 0., 1.));&amp;#10;    float mask = square(st2);&amp;#10;&amp;#10;    return vec4( color, mask );&amp;#10;}&amp;#10;&amp;#10;vec4 trail(vec2 st) {&amp;#10;    const float piece_height = 7. / .69;&amp;#10;    const float piece_width = 6. / .54;&amp;#10;  &amp;#10;    st.x = 1.2760 * pow(st.x, 3.0) - 1.4624 * st.x*st.x + 1.4154 * st.x;&amp;#10;    &amp;#10;    float x_at_cell = floor(st.x*piece_width)/piece_width;&amp;#10;    float x_at_cell_center = x_at_cell + 0.016;&amp;#10;    float incline = cos(0.5*period + wave_phase()) * wave_amplitude;&amp;#10;    &amp;#10;    float offset = sin(x_at_cell_center*period + wave_phase())* wave_amplitude + &amp;#10;        incline*(st.x-x_at_cell)*5.452;&amp;#10;    &amp;#10;    float mask = step(offset, st.y) * (1.-step(.69+offset, st.y)) * step(0., st.x);&amp;#10;    &amp;#10;    vec2 cell_coord = vec2((st.x - x_at_cell) * piece_width,&amp;#10;                           fract((st.y-offset) * piece_height));&amp;#10;    vec2 cell_index = vec2(x_at_cell * piece_width, &amp;#10;                           floor((st.y-offset) * piece_height));&amp;#10;    &amp;#10;    vec4 pieces = trail_piece(cell_coord, cell_index, 0.752);&amp;#10;    &amp;#10;    return vec4(vec3(pieces), pieces.a * mask);&amp;#10;}&amp;#10;&amp;#10;vec4 logo(vec2 st) {&amp;#10;    if (st.x &lt;= .54) {&amp;#10;        return trail(st);&amp;#10;    } else {&amp;#10;        vec2 st2 = st + vec2(0., -sin(st.x*period + wave_phase())*wave_amplitude);&amp;#10;        return frame(st2 + vec2(-.54, 0));&amp;#10;    }&amp;#10;}&amp;#10;&amp;#10;void main() {&amp;#10;    vec2 st = vUv;&amp;#10;    st.x *= iResolution.x/iResolution.y;&amp;#10;&amp;#10;    st += vec2(.0);&amp;#10;    st *= 1.472;&amp;#10;    st += vec2(-0.7,-0.68);&amp;#10;    float rot = PI*-0.124;&amp;#10;    st *= mat2(cos(rot), sin(rot), -sin(rot), cos(rot));&amp;#10;    vec3 color = vec3(1.);&amp;#10;    &amp;#10;    vec4 logo_ = logo(st);    &amp;#10;    gl_FragColor = mix(vec4(0.,.5,.5,1.000), logo_, logo_.a);&amp;#10;}&amp;#10;    `;&amp;#10;    &amp;#10;    // Vertex shader (简单pass UV)&amp;#10;    const vertexShader = `&amp;#10;varying vec2 vUv;&amp;#10;void main() {&amp;#10;    vUv = uv;&amp;#10;    gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);&amp;#10;}&amp;#10;    `;&amp;#10;    &amp;#10;    obj.material = new v3d.ShaderMaterial({&amp;#10;        uniforms: {&amp;#10;            iTime: { value: 0.0 },&amp;#10;            iResolution: { value: new v3d.Vector3() }&amp;#10;        },&amp;#10;        vertexShader: vertexShader,&amp;#10;        fragmentShader: fragmentShader&amp;#10;    });&amp;#10;    &amp;#10;    // 动画更新循环&amp;#10;    app.addEventListener('loop', function(e) {&amp;#10;        obj.material.uniforms.iTime.value = e.clock.elapsedTime;&amp;#10;        obj.material.uniforms.iResolution.value.set(&amp;#10;            app.renderer.domElement.width,&amp;#10;            app.renderer.domElement.height,&amp;#10;            1&amp;#10;        );&amp;#10;    });&amp;#10;}</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </statement>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="965" viewport-y="234" viewport-w="1102.5" viewport-h="918" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
